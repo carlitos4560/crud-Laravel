@@ -83,8 +83,7 @@
                 </div>
 
                 <div class="links">
-                    <a href="{{ route('products.index') }}">Listado de Productos</a>
-                    
+                    <a href="{{ route('products.index') }}">Listado de Productos</a>                    
                 </div>
             </div>
         </div>
