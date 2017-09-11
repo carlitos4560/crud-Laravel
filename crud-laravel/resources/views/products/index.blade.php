@@ -3,7 +3,9 @@
 	<div class="col-sm-8">
 		<h2>
 			Listado de productos
-			<a href="{{ route('products.create') }}" class="btn btn-primary pull-right" > nuevo</a>
+      <a href="{{ route('products.create') }}" class="btn btn-primary pull-right" > nuevo</a>
+    </h2>
+    @include('products.fragment.info')
 			<table>
 				<thead>
 					<tr>
@@ -37,10 +39,9 @@
 					@endforeach
 				</tbody>
 			</table>
-			{!! $products->render()!!}
-		</h2>	
+			{!! $products->render()!!}		
 	</div>
 	<div class="col-sm-4">
-		mensaje
+    @include('products.fragment.aside')
 	</div>
 @endsection

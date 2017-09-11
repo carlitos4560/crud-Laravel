@@ -10,6 +10,6 @@
     {!! $product->body  !!}
   </div>
 	<div class="col-sm-4">
-		mensaje
+    @include('products.fragment.aside')
 	</div>
 @endsection
